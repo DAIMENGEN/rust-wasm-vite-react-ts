@@ -8,7 +8,8 @@ function App() {
     const [count, setCount] = useState(0)
 
     useEffect(() => {
-        wasm.greet();
+        wasm.using_js_alert();
+        wasm.using_web_sys_console();
     }, []);
 
     return (
